@@ -2,4 +2,4 @@
 set -x
 set -eo pipefail
 
-cargo watch -x check -x fmt -x test
+cargo watch -x check -x fmt -x build -x test
