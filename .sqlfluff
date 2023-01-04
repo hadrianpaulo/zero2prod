@@ -1,0 +1,32 @@
+[sqlfluff]
+sql_file_exts = .sql,.sql.j2,.dml,.ddl
+dialect = postgres
+
+[sqlfluff:indentation]
+indented_joins = false
+indented_using_on = true
+
+
+[sqlfluff:rules]
+max_line_length = 100
+
+[sqlfluff:layout:type:comma]
+line_position = leading
+
+[sqlfluff:rules:L010]
+capitalisation_policy = upper
+
+[sqlfluff:rules:L014]
+extended_capitalisation_policy = lower
+
+[sqlfluff:rules:L030]
+extended_capitalisation_policy = upper
+
+[sqlfluff:rules:L040]
+capitalisation_policy = upper
+
+[sqlfluff:rules:L054]
+group_by_and_order_by_style = explicit
+
+[sqlfluff:rules:L063]
+extended_capitalisation_policy = upper
